@@ -2,7 +2,7 @@ apiVersion: cert-manager.io/v1alpha2
 kind: Certificate
 metadata:
   name: nginx-tls
-  namespace: YOUR NAMESPACE
+  namespace: cert-manager
 spec:
   secretName: nginx-tls
   issuerRef:
