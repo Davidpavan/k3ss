@@ -9,4 +9,10 @@ spec:
     name: letsencrypt-prod
     kind: ClusterIssuer
   dnsNames:
-    - 'employee.pavanzs.online'
+    - '*.pavanzs.online'
+  acme:
+    config:
+      - dns01:
+          provider: route53
+        domains:
+          - '*.pavanzs.online'
