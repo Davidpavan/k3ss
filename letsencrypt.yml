@@ -12,7 +12,7 @@ spec:
     solvers:
       - selector:
           dnsZones:
-            - 'pavanzs.online'
+            - "pavanzs.online"
         dns01:
           route53:
             region: us-east-1
