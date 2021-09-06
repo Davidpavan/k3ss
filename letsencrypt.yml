@@ -16,7 +16,7 @@ spec:
         dns01:
           route53:
             region: us-east-1
-            accessKeyID: AKIA3YT5GQXK35QT3NEW
+            accessKeyID: AKIA3YT5GQXK7DTVC4EY
             secretAccessKeySecretRef:
               name: acme-route53
               key: secret-access-key
