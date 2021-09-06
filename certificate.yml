@@ -15,4 +15,4 @@ spec:
       - dns01:
           provider: route53
         domains:
-          - '*.pavanzs.online'
+          - 'employee.pavanzs.online'
