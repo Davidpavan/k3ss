@@ -1,0 +1,22 @@
+apiVersion: cert-manager.io/v1alpha2
+kind: ClusterIssuer
+metadata:
+  name: letsencrypt-prod
+  namespace: cert-manager
+spec:
+  acme:
+    server: https://acme-v02.api.letsencrypt.org/directory
+    email: david@zelarsoft.com
+    privateKeySecretRef:
+      name: letsencrypt-prod
+    solvers:
+      - selector:
+          dnsZones:
+            - "employee.pavanzs.online"
+        dns01:
+          route53:
+            region: us-east-1
+            accessKeyID: AKIA3YT5GQXK35QT3NEW
+            secretAccessKeySecretRef:
+              name: acme-route53
+              key: secret-access-key
