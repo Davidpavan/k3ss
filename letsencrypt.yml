@@ -19,4 +19,4 @@ spec:
             accessKeyID: AKIA3YT5GQXK5HCXKWVM
             secretAccessKeySecretRef:
               name: acme-route53
-              key: ruBfjDnxTtsQEIia8xeEYJ27hY+7O8ucvL204UsF
+              key: secret-access-key
