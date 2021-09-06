@@ -10,9 +10,3 @@ spec:
     kind: ClusterIssuer
   dnsNames:
     - 'employee.pavanzs.online'
-  acme:
-    config:
-      - dns01:
-          provider: route53
-        domains:
-          - 'employee.pavanzs.online'
