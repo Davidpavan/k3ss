@@ -13,7 +13,7 @@ spec:
     - pavanzs.online
   acme:
     config:
-      - dns01:
+        dns01:
           provider: route53
         domains:
           - "*.pavanzs.online"
