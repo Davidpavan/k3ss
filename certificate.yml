@@ -8,15 +8,15 @@ spec:
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
-  commonName: pavanzs.online
   dnsNames:
-    - pavanzs.online
+    - '*.pavanzs.online'
   acme:
     config:
-    - dns01:
-        provider: route53
-      domains:
-        - pavanzs.online
+      - dns01:
+          provider: route53
+        domains:
+          - '*.pavanzs.online'
+
 #  acme:
 #    config:
 #      - dns01:
