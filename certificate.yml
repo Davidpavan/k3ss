@@ -14,7 +14,7 @@ spec:
   acme:
     config:
     - dns01:
-        provider: aws-route53
+        provider: route53
       domains:
       - pavanzs.online
       - "*.pavanzs.online"
