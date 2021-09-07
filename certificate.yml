@@ -11,7 +11,7 @@ spec:
   commonName: pavanzs.online
   dnsNames:
     - pavanzs.online
-  certificate.spec.acme:
+  acme:
     config:
     - dns01:
         provider: route53
